@@ -1,4 +1,4 @@
-/* HAJY — shared styles */
+/* HAJY shared styles */
 
 :root {
   --color-primary: #1b4332;
@@ -6,13 +6,14 @@
   --color-primary-dark: #12301f;
   --color-accent: #b8902e;
   --color-accent-light: #d4af5a;
-  --color-bg: #ffffff;
-  --color-bg-alt: #f6f5f1;
+  --color-bg: #f6faf5;
+  --color-bg-alt: #dfebd9;
+  --color-bg-soft: #eef5ea;
   --color-bg-dark: #12301f;
   --color-text: #1f2421;
-  --color-text-muted: #5b6660;
+  --color-text-muted: #52604f;
   --color-text-inverse: #f4f3ee;
-  --color-border: #e3e1d8;
+  --color-border: #cfe0c8;
 
   --font-heading: "Playfair Display", Georgia, serif;
   --font-body: "Inter", -apple-system, "Segoe UI", sans-serif;
@@ -25,6 +26,7 @@
   :root {
     --color-bg: #14201a;
     --color-bg-alt: #182720;
+    --color-bg-soft: #182720;
     --color-text: #eceae3;
     --color-text-muted: #a9b2ab;
     --color-border: #263a30;
@@ -43,9 +45,15 @@ body {
   margin: 0;
   font-family: var(--font-body);
   color: var(--color-text);
-  background: var(--color-bg);
+  background: linear-gradient(180deg, #e4efdd 0%, var(--color-bg) 380px, var(--color-bg) 100%);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: var(--color-bg);
+  }
 }
 
 h1, h2, h3, h4 {
@@ -145,7 +153,7 @@ img {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(255, 255, 255, 0.92);
+  background: rgba(240, 247, 237, 0.92);
   backdrop-filter: saturate(180%) blur(10px);
   border-bottom: 1px solid var(--color-border);
 }
