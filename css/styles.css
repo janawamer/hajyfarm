@@ -175,9 +175,10 @@ img {
 }
 
 .brand-mark {
-  width: 34px;
   height: 34px;
+  width: auto;
   flex-shrink: 0;
+  display: block;
 }
 
 .nav-links {
@@ -713,6 +714,7 @@ form.contact-form {
   color: var(--color-text-muted);
   font-size: 0.85rem;
   margin-top: 40px;
+  overflow: hidden;
 }
 
 /* CTA band */
@@ -813,9 +815,19 @@ form.contact-form {
   margin-bottom: 14px;
 }
 
-.footer-brand svg {
-  width: 28px;
-  height: 28px;
+.footer-mark-badge {
+  display: inline-flex;
+  align-items: center;
+  background: var(--color-bg-alt);
+  border-radius: 6px;
+  padding: 4px 7px;
+  flex-shrink: 0;
+}
+
+.footer-mark-badge img {
+  height: 22px;
+  width: auto;
+  display: block;
 }
 
 .site-footer h5 {

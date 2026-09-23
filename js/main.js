@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
       ];
 
       var mailto =
-        "mailto:hajy.info@gmail.com" +
+        "mailto:info@hajyeg.com" +
         "?subject=" + encodeURIComponent(subject) +
         "&body=" + encodeURIComponent(bodyLines.join("\n"));
 

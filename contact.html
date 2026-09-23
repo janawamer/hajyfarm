@@ -7,6 +7,7 @@
 <meta name="description" content="Get in touch with HAJY for fruit export inquiries, availability and pricing.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="images/favicon.png">
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -14,11 +15,7 @@
 <header class="site-header">
   <div class="container nav">
     <a href="index.html" class="brand">
-      <svg class="brand-mark" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="20" r="19" stroke="currentColor" stroke-width="1.5"/>
-        <path d="M20 10c-5 3-8 7-8 12a8 8 0 0 0 16 0c0-5-3-9-8-12Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
-        <path d="M20 10v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-      </svg>
+      <img src="images/logo-mark.png" alt="HAJY logo" class="brand-mark">
       HAJY
     </a>
     <nav>
@@ -73,7 +70,7 @@
           </div>
           <div>
             <h4>Email</h4>
-            <a href="mailto:hajy.info@gmail.com">hajy.info@gmail.com</a>
+            <a href="mailto:info@hajyeg.com">info@hajyeg.com</a>
           </div>
         </div>
 
@@ -86,7 +83,7 @@
           </div>
           <div>
             <h4>Farm Location</h4>
-            <span>Location details placeholder &mdash; add HAJY&rsquo;s farm address here.</span>
+            <span>Al Nubaria, Cairo Alex Desert Road, Egypt</span>
           </div>
         </div>
 
@@ -99,7 +96,7 @@
           </div>
           <div>
             <h4>Business Hours</h4>
-            <span>Hours placeholder &mdash; add HAJY&rsquo;s working days and hours here.</span>
+            <span>Sunday &ndash; Thursday, 9:00 AM &ndash; 5:00 PM</span>
           </div>
         </div>
       </div>
@@ -140,12 +137,22 @@
             <textarea id="message" name="message" rows="5" placeholder="Tell us about the quantities, destination and timeline you have in mind." required></textarea>
           </div>
           <button type="submit" class="btn btn-primary">Send Message</button>
-          <p class="form-note">Submitting opens your email app with this message addressed to hajy.info@gmail.com, since this site does not yet have a backend contact service connected.</p>
+          <p class="form-note">Submitting opens your email app with this message addressed to info@hajyeg.com, since this site does not yet have a backend contact service connected.</p>
         </form>
       </div>
     </div>
 
-    <div class="map-placeholder">Map placeholder &mdash; embed HAJY&rsquo;s farm location here</div>
+    <div class="map-placeholder">
+      <iframe
+        src="https://www.google.com/maps?q=Al+Nubaria,+Cairo+Alexandria+Desert+Road,+Egypt&output=embed"
+        width="100%"
+        height="100%"
+        style="border:0;"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="HAJY farm location map">
+      </iframe>
+    </div>
   </div>
 </section>
 
@@ -154,10 +161,7 @@
     <div class="footer-grid">
       <div>
         <div class="footer-brand">
-          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="20" cy="20" r="19" stroke="currentColor" stroke-width="1.5"/>
-            <path d="M20 10c-5 3-8 7-8 12a8 8 0 0 0 16 0c0-5-3-9-8-12Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
-          </svg>
+          <span class="footer-mark-badge"><img src="images/logo-mark.png" alt="HAJY logo"></span>
           HAJY
         </div>
         <p>Premium fruit grown and exported directly from our farm to markets worldwide.</p>
@@ -184,7 +188,7 @@
         <ul>
           <li><a href="tel:+201141129291">+20 114 112 9291</a></li>
           <li><a href="tel:+201002500183">+20 100 250 0183</a></li>
-          <li><a href="mailto:hajy.info@gmail.com">hajy.info@gmail.com</a></li>
+          <li><a href="mailto:info@hajyeg.com">info@hajyeg.com</a></li>
         </ul>
       </div>
     </div>
